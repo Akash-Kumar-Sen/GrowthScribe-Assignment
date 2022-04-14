@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
-
+from .settings import STATIC_URL,STATIC_ROOT
 from .views import *
 
 urlpatterns = [
@@ -9,4 +9,4 @@ urlpatterns = [
     path('', index,name='index'),
     path('form/', formgiven,name='form'),
     path('data/', fetchdata,name='data'),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(STATIC_URL, document_root=STATIC_ROOT)
