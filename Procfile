@@ -1,0 +1,1 @@
+web: gunicorn GrowthScribeAssignment.wsgi --log-file -

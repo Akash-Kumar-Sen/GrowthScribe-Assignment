@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Form | GrowthScribe Assignment</title>
+</head>
+<body class="dark-body">
+    <div class="content">
+        <h1 class="heading-top">Contact Us</h1>
+        {% include 'alerts.html' %}
+        <form action="{% url 'form' %}" method="POST">
+            {% csrf_token %} 
+            <div class="input-items">
+                <label class="labels">Name</label>
+                <br>
+                {{form.name}}
+            </div>
+
+            <div class="input-items">
+                <label class="labels">Email</label>
+                <br>
+                {{form.email}}
+            </div>
+
+            <div class="input-items">
+                <label class="labels">Details</label>
+                <br>
+                {{form.details}}
+            </div>
+
+            <input class="submit-btn" type="submit" value="SEND MESSAGE">
+        </form>
+        <div class="icons">
+            <a class="icon-link" href="/"><i class="fab fa-instagram"></i></a>
+            <a class="icon-link" href="/"><i class="fab fa-twitter"></i></a>
+            <a class="icon-link" href="/"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</body>
+</html>

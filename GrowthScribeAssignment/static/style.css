@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*For both pages*/
+.dark-body{
+    display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.content{
+    padding: 5rem;
+    border-radius: 10%;
+    background-color: black;
+}
+
+.heading-top{
+    color: aliceblue;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}
+
+
+/* For form page*/
+.input-items{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.labels{
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input{
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid  rgba(153, 157, 160, 0.859);
+    width: 25em;
+    height: 2em;
+}
+
+.input:focus {
+    outline: none;   
+    border-bottom: 1px solid aliceblue; 
+}
+
+.input::-webkit-input-placeholder {
+    color: rgba(153, 157, 160, 0.859);
+    font-weight: 400;
+}
+
+.input:focus::-webkit-input-placeholder {
+    color: aliceblue;
+}
+
+.submit-btn{
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+    color: black;
+    font-weight: bolder;
+    padding: 8px;
+    width: 10rem;
+    margin-top: 2rem;
+}
+
+.icons{
+    margin-top: 2rem;
+}
+
+.icon-link{
+    color: aliceblue;
+    padding-right: 10px;
+}
+
+
+
+/* For index Page*/
+.navigation{
+    margin-top: 2rem;
+    margin-right: 10px;
+}
+.navigator-btn{
+    margin-right: 10px !important;
+    padding: 10px !important;
+    border: 1px solid blue !important;
+    color: aliceblue !important;
+    background-color: blue;
+    border-radius: 10% !important;
+}
